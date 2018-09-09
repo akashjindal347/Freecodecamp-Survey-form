@@ -1,0 +1,85 @@
+<html>
+<title>SUrvey Form</title>
+<h1 class="text" id="title">Survey Form</h1>
+<style>
+.text{
+color: red;
+background-color: gold;
+font-family: Lucida Handwriting;
+font-size: 50px;
+text-align: center;
+}
+.text1{
+text-align: center;
+font-family: calibri;
+font-size: 25px;
+}
+.XD{
+background-color:  #BCBEB5;
+
+</style>
+<div class="XD">
+<p id="description" class="text1">Fill up the form</p>
+<form id="survey-form">
+<label  id="name-label">Name:</label>
+<input type="text" id="name" name="name" align="center" placeholder="enter name" required><br><br>
+<label id="email-label" >E-mail:</label>
+<input type="email" id="email" name="email" placeholder="enter email" required><br><br>
+<label  id="number-label">Age:</label>
+<input type="number" id="number" name="age" placeholder="enter age" min="18" max="29" required><br><br>
+<p>How likely is that you would recommend freeCodeCamp to a friend?</p>
+
+<label> 
+  <input type="radio" name="decision" value="0">Definitely
+</label><br>
+
+<label> 
+  <input type="radio" name="decision"  value="0">Maybe 
+</label><br>
+
+<label> 
+  <input type="radio" name="decision"  value="0">Not Sure
+</label><br><br>
+
+<select id="dropdown">
+<option value="" disabled selected>Select an option</option>
+<option value="Student" >Student</option>
+<option value="Full time job" >Full time job</option>
+<option value="Full time learner" >Full time learner</option>
+<option value="Prefer not to stay" >Prefer not to stay</option>
+<option value="others" >others</option>
+</select>
+
+
+
+<p>Things that should be improved in the future</p>
+<p>(Check all that apply):</p><br>
+
+<label>
+
+<input type="checkbox" name="Projects" value="eng-projects" required>Front-end Projects
+</label><br>
+<label>
+
+<input type="checkbox" name="Projects" value="eng-projects" required>Back-end Projects
+</label><br>
+<label>
+
+<input type="checkbox" name="Projects" value="eng-projects" required>Data Visualization
+</label><br>
+<label>
+<input type="checkbox" name="Projects" value="eng-projects" required>Challenges
+</label><br>
+<label>
+<input type="checkbox" name="Projects" value="eng-projects" required>Open Source Community
+</label><br>
+<label>
+<input type="checkbox" name="Projects" value="eng-projects" required>Gitter Help Rooms
+</label><br>
+<p>comments:</p>
+<textarea rows="4" cols="50">
+</textarea>
+<button id="submit" type="submit">Submit</button>
+
+</form>
+</html>
